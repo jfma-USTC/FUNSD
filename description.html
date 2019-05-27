@@ -17,41 +17,85 @@ permalink: /description/
     </div>
 </section>
 
-<section id="description2">
+<section id="description">
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <h1> Optical Character Recognition </h1>
-    <!--<p> soem blabla an dimages showing OCR  </p>-->
-        <p> Coming soon  </p>
+    <h1> Dataset format </h1>
+                <div class="block">
+                            <p> All the annotations are encoded in a JSON file. An example showing the annotations for the image below is presented.
+                                A detailed description of each entry from the JSON file is provided in the original paper. </p>
+          <img src="../img/semantic_entity_example.png" alt="Img" width="70%" height="70%">
+        </div>
+        <body>
+    <pre>
+        {
+        "form": [
+            {
+                "text": "Registration No.",
+                "box": [94,169,191,186],
+                "linking": [
+                   [1,2]
+                ],
+                "label": "question",
+                "words": [
+                    {
+                        "text": "Registration",
+                       "box": [94,169,168,186]
+                    },
+                    {
+                       "text": "No.",
+                       "box": [170,169,191,183]
+                    }
+                ]
+            },
+            {
+                "box": [209,169,236,182],
+                "text": "533",
+                "label": "answer",
+                "words": [
+                    {
+                        "box": [209,169,236,182],
+                        "text": "533"
+                    }
+                ],
+                "linking": [
+                    [1,2]
+                ]
+            }
+    ]
+    }
+    </pre>
+</body>
     </div>
   </div>
 </div>
 </section>
 
-<section id="description3">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-    <h1> Word grouping and labeling through semantic entities </h1>
-    <!--<p> soem blabla an images showing word grouping  </p>-->
-        <p> Coming soon  </p>
-    </div>
-  </div>
-</div>
-</section>
 
-<section id="description4">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-    <h1> Semantic relations </h1>
-    <!--<p> soem blabla an images showing rerlations, QA pairs etc...  </p>-->
-        <p> Coming soon  </p>
-    </div>
-  </div>
-</div>
-</section>
+<!--<section id="description3">-->
+<!--<div class="container">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<h1> Word grouping and labeling through semantic entities </h1>-->
+    <!--&lt;!&ndash;<p> soem blabla an images showing word grouping  </p>&ndash;&gt;-->
+        <!--<p> Coming soon  </p>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+<!--<section id="description4">-->
+<!--<div class="container">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+    <!--<h1> Semantic relations </h1>-->
+    <!--&lt;!&ndash;<p> soem blabla an images showing rerlations, QA pairs etc...  </p>&ndash;&gt;-->
+        <!--<p> Coming soon  </p>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--</section>-->
 
 
 
